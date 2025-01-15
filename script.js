@@ -1,4 +1,10 @@
-let city = "paris"
+const urlParams = new URLSearchParams(window.location.search);
+let city = urlParams.get('city');
+
+if (city == null || city == "") {
+  city = 'havre'
+}
+
 const apikey = '5d454e551331b436878b024caaf4aa3a'
 let url = `https://api.openweathermap.org/data/2.5/forecast?lang=fr&units=metric&q=${city}&appid=${apikey}`
 
@@ -13,6 +19,7 @@ fetch(url)
         console.log(data.list[0].main.temp_min)
         console.log()
         console.log()
+
 
 
 
