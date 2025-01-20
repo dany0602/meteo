@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INTERFACE METEO</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
 
-  <body>
-    <div class="search">
-      <form action="">
-        <input
-          type="text"
-          name="city"
-          id="ville"
-          placeholder="ex. Le Havre"
-          class="nav"
-        />
-        <input type="submit" value="Rechercher" class="nav2" />
-      </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INTERFACE METEO</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="search">
+    <form action="">
+      <input type="text" name="city" id="ville" placeholder="ex. Le Havre" class="nav" />
+      <input type="submit" value="Rechercher" class="nav2" />
+    </form>
+    <div class="notfound" id="404">
+      <p>Ville non trouvée, renseignez une autre ville</p>
+      <p>Nie znaleziono miasta, wprowadź inne miasto</p>
     </div>
+  </div>
 
-    <img
-      src="asset/manipulation-4302142_640.jpg"
-      class="grenouille"
-      alt="asset/manipulation-4302142_640.jpg"
-    />
+  <img src="asset/manipulation-4302142_640.jpg" class="grenouille" alt="asset/manipulation-4302142_640.jpg" />
 
-    <div id="interface">
-      <!-- <div class="soleil">
+  <div id="interface">
+    <!-- <div class="soleil">
         <p class="temperature">18°</p>
         <div class="date">
           <p>Le Havre</p>
@@ -47,8 +42,16 @@
         />
         <p>Forte pluie</p>
       </div> -->
-    </div>
-    <script src="moment-with-locales.js"></script>
-    <script src="script.js"></script>
-  </body>
+  </div>
+
+  <div class="presentation">
+    <p>
+      Pogoda prezentowana przez <span class="presentateur">Monika Lisiecka</span>
+    </p>
+  </div>
+
+  <script src="moment-with-locales.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

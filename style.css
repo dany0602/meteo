@@ -1,8 +1,9 @@
 body {
   background-color: rgb(114, 193, 122);
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 600px;
   /* background-color: #f4f4f4; */
 }
 
@@ -97,4 +98,21 @@ p {
   font-weight: bold;
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+.notfound {
+  visibility: hidden;
+}
+
+.presentation {
+text-align: center;
+margin-bottom: 5rem;
+}
+
+.presentation>p{
+  font-size: 1.5rem;
+}
+.presentateur {
+  display: block;
+  font-weight: bold;
 }
